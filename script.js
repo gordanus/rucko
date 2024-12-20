@@ -198,6 +198,8 @@ function suggestRecipes() {
         li.textContent = "Nisu pronadjeni recepti sa dodatim sastojcima.";
         recipeList.appendChild(li);
     }
+    document.getElementById('scroll-to').scrollIntoView();
+
 }
 
 function showRecipeDetails(recipe) {

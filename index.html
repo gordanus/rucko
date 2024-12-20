@@ -24,12 +24,12 @@
 <body>
     <div class="container">
         <h1>Ručko</h1>
-        <p>Šta kuvati danas? Ili sutra? Večito pitanje. <br><br>Dodajte pojedinačne sastojke koje imate na raspolaganju
+        <p>Šta kuvati danas? Ili sutra? Večito pitanje. <br><br>Dodajte sastojke, jedan po jedan, koje imate na raspolaganju
             i <span>Ručko</span> će vam predložiti jela koja se mogu spremiti sa tim sastojcima. </p>
         <div class="input-group">
             <input type="text" id="ingredient" placeholder="npr. mleveno meso, kupus, tikvice...">
-            <button class="button" onclick="addIngredient()">Dodaj sastojke</button>
-            <button class="button clear" onclick="resetIngredients()">Poništi sastojke</button>
+            <button class="button" onclick="addIngredient()">Dodaj sastojak</button>
+            <button class="button clear" onclick="resetIngredients()">Poništi sastojak</button>
         </div>
 
         <h3>Sastojci:</h3>
@@ -37,7 +37,7 @@
 
         <button class="button" onclick="suggestRecipes()">Predloži recepte</button>
 
-        <h3>Recepti:</h3>
+        <h3 id="scroll-to">Recepti:</h3>
         <ul id="recipe-list">-</ul>
 
         <div id="recipe-details" class="recipe-details" style="display: none;"></div>
