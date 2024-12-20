@@ -206,4 +206,5 @@ function showRecipeDetails(recipe) {
     const recipeDetails = document.getElementById('recipe-details');
     recipeDetails.style.display = 'block';
     recipeDetails.innerHTML = `<h3>${recipe.name}</h3><p>${recipe.details}</p>`;
+    document.getElementById('recipe-details').scrollIntoView();
 }
